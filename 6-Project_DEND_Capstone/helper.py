@@ -1,3 +1,5 @@
+import re
+
 def clean_temp_data(df):
     """
     Clean temperature data by removing missing temperature data and removing duplicate entries
@@ -32,9 +34,22 @@ def quality_check(df, description):
     """
     Take dataframe as input and print out result of data quality check.
     """
-
+    result = 0
     result = df.count()
     if result == 0:
         print("Data quality check failed for {} with zero records".format(description))
     else:
         print("Data quality check passed for {} with {} records".format(description, result))
+
+
+def get_i94port_valid(file):
+    """
+    Create valid i94port dictionary from input text file for creating fact table
+    """
+    re_obj = re.compile(r'\'(.*)\'.*\'(.*)\'')
+    i94port_valid = {}
+    with open(file) as f:
+         for line in f:
+             match = re_obj.search(line)
+             i94port_valid[match[1]]=[match[2]]
+    return i94port_valid
