@@ -37,4 +37,5 @@ The data comes from <a href="https://public.opendatasoft.com/explore/dataset/us-
 The dataset is provided by <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0 </a>.  
 
 
-
+<h3>Data Model</h3>
+I chose to use a star schema with the immigration dataset combined with temperature data chosen to be the fact table and the temperature,  city demographics, and immigration datasets chosen to be dimension tables.
