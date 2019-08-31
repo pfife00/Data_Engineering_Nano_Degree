@@ -2,20 +2,28 @@
 <h3>Data Engineering Capstone Project</h3>
 
 <h3>Project Summary</h3>
+The goal of this project was to develop an ETL pipeline in order search immigration data related to temperature and city demographics. In constructing the pipeline, I focused on addressing 3 primary questions in order to perform data cleaning and mapping the pipeline:
+<ol> 
+    <li>Which cities do immigrants tend to move and where did they come from?</li>
+<li>Does temperature play a role on where people on temporary visas go?</li>
+    <li>Did the demographic counted in the US_Cities-Demographics dataset correspond at all where immigrants tend to travel?</li>
+</ol>
+
+The project follows the follow steps:
+* Step 1: Scope the Project and Gather Data
+* Step 2: Explore and Assess the Data
+* Step 3: Define the Data Model
+* Step 4: Run ETL to Model the Data
+* Step 5: Complete Project Write Up
 
 <h3>Data Sets</h3>
 The data sets used for this project are:
 <ul>
-    <li>Airport Codes</li>
     <li>Immigration Data</li>
     <li>US Cities Demographics</li>
     <li>Earth Surface Temperature Data</li>
 </ul>
 
-<h4>Airport Codes</h4>
-The airport codes data are a sample table of airport codes and corresponding cities contained in a Udacity provided csv file. The dataset is 
-taken from <a href="https://datahub.io/core/airport-codes#data">here</a></li>  
-    
 <h4>Immigration Data</h4>
 The data comes from the US National Tourism and Trade Office and provided by Udacity. A data dictionary is provided within the file I94_SAS_Labels_Descriptions.SAS. I added Visa code descriptions to the data dictionary as I plan to use the visa types in my project.
 The data set was taken from <a href="https://travel.trade.gov/research/reports/i94/historical/2016.html">this link</a>.
@@ -27,5 +35,6 @@ The data comes from <a href="https://public.opendatasoft.com/explore/dataset/us-
 
 <h4>World Temperature Data</h4>
 The dataset is provided by <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0 </a>.  
+
 
 
