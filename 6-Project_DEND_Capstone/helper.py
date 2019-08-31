@@ -27,3 +27,14 @@ def clean_i94_data(df, i94port_valid):
     df = df.drop('occup', 'entdepu', 'insnum')
 
     return df
+
+def quality_check(df, description):
+    """
+    Take dataframe as input and print out result of data quality check.
+    """
+
+    result = df.count()
+    if result == 0:
+        print("Data quality check failed for {} with zero records".format(description))
+    else:
+        print("Data quality check passed for {} with {} records".format(description, result))
